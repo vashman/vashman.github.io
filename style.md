@@ -48,8 +48,22 @@ __Rationale__:
 
 Header Comment
 --------------------------------------------------------------------------
+The begging of every file should contain a single line at the top,
+summarizing the purpose of the file.
+
+__Rationale__:
+To easly understand the purpose of the file. Only one line should be used
+to ensure that the purpose is simply and does not encapsulate too many
+responsibilites.
+
 License Header
 --------------------------------------------------------------------------
+The license header should appear after the header comment.
+
+__Rationale__:
+To make the license easlit accesable to an entity who does not need to
+know about the code. It is shown under the comment to ensure that there is
+some context to what the license is applying to.
 
 White Space
 ==========================================================================
