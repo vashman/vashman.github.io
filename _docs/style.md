@@ -1,3 +1,9 @@
+---
+layout: default
+title: C++ Style Guide
+permalink: /docs/style/
+---
+
 C++ Style Guide
 ==========================================================================
 File Names
