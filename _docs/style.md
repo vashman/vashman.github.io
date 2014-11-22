@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: docs
 title: C++ Style Guide
 permalink: /docs/style/
 ---
