@@ -27,8 +27,8 @@ following list shows extenstion and the purpose of the file;
 __Rationale__:
 1. The extentions "c++" may cause problems if the plus signs are
 misintrupted which would require them to be escaped.
-2.
-3.
+2. 
+3. 
 
 File Structure
 ==========================================================================
@@ -40,17 +40,17 @@ Include Guards should consist of;
 3. The file extention
 
 __Rationale__:
-1. 
-2. 
-3. 
+1. Avoids conflincts by either conflicting consistantly or not at all.
+2. Avoids confilicts and provides file information within the marco.
+3. Avoids confilicts.
 
 The include guard should formatted with the following formatting;
 1. ALL CAPS
 2. names/parts/sections should be seperated with a single underscore
 
 __Rationale__:
-1. 
-2. 
+1. Avoid subsituting code.
+2. Clear to read
 
 Header Comment
 --------------------------------------------------------------------------
@@ -76,14 +76,102 @@ White Space
 
 Indentation
 ==========================================================================
+Identing should only be done when the indention level signifies a
+realtionship with the previous information. The following are some good
+times this is so.
+
+An indentation level should consist of two spaces. Indentation using tabs
+should only occur at the begging of a line.
+
+__Rationale__:
+When reading a document the level of indentation signifies to the reader a
+change in operation, which may or may not show branching as well.
+
+Using more than two spaces forces excess line wrapping for longer
+statements. Using tabs in between the line force the reader to know and
+use the tab size of the editor.
+
 Line Wraping
 --------------------------------------------------------------------------
+Wrapped lines should be indented with the same indentation level as the
+start of the line, plus an addtional indentation. The level of indentation
+should only be used to make the wrapped lines a legible as possible. If
+the lines are virtually the same length the wraped lines should be right
+aligned with the longest line.
+
+```c++
+/* This is ok but hard to tell its all one line. */
+very_long_var_type very_long_name_of_var
+  = some_static_of_the_some_scope();
+very_long_var_type very_long_name_of_var
+  = some_static_of_the_some_scope();
+very_long_var_type very_long_name_of_var
+  = some_static_of_the_some_scope();
+
+/* This makes it easier to see that the lines are wrapped. */
+very_long_var_type very_long_name_of_var
+      = some_static_of_the_some_scope();
+very_long_var_type very_long_name_of_var
+      = some_static_of_the_some_scope();
+very_long_var_type very_long_name_of_var
+      = some_static_of_the_some_scope();
+
+/* Lines of diffent lengths */
+very_long_var_type very_long_name_of_var_with_addtional_info
+                          = some_static_of_the_some_scope();
+very_long_var_type name_of_var
+                          = some_static_of_the_some_scope();
+very_long_var_type very_long_name_of_var
+                          = some_static_of_the_some_scope();
+```
+
+__Rationale__:
+Wrapped lines should appear and be readable as one statement, when the
+start and end of the line is not clearly visable this becomes more
+difficult. 
 
 Branching / Logic Level
 --------------------------------------------------------------------------
+When entering a new logic level or any sort of branching operation in
+which it is unknown whether the operation will branch or not. The entire
+block should be indented once plus any previous indentation.
+
+```c++
+statement();
+statement();
+anthoer_statement();
+  if (if the state is x){
+  change state;
+  }
+```
+
+__Rationale__:
+It should be clear the the reader that the block may be optionally or
+would have a purpose or cause out of the scope of the flow up in till that
+point.
 
 Identation in Structure
 --------------------------------------------------------------------------
+Lines should be indented once within a structure.
+
+```c++
+class foo {
+public:
+  int some_var;
+  void func();
+
+private:
+  int var;
+};
+```
+
+```c++`
+``
+
+__Rationle__:
+The statements within the structure belong to the structure and are a
+seperate logic level when read. The access qualifiers are part the of the
+class. 
 
 Line Length
 ==========================================================================
@@ -92,7 +180,7 @@ Lines should be no more than 74 characters long.
 __Rationale__:
 
 
-Conytol Structures
+New Lines
 ==========================================================================
 
 Namespaces
