@@ -1,2 +1,9 @@
 markdown: rdiscount
 highlighter: pygements
+relative_permalinks: false
+
+repository: https://github.com/vashman/vashman.github.io
+
+collections:
+  docs:
+    output: true
