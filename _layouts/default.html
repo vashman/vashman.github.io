@@ -1,23 +1,11 @@
 <!DOCTYPE html>
 <html>
-
-  <body>
-
-<nav>
-<li><a href="">Search</li>
-<li><a href="/">Home</li>
-<li><a href="/concept/readme">Concept</li>
-<li><a href="/template/readme">Template</li>
-<li><a href="/posts">Log</li>
-<li><a href="">Ontology</li>
-</nav>
-
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </div>
-
-  </body>
-
+{% include header.html %}
+{% include navigation.html %}
+<body>
+  <div class="page-content"><div class="wrapper">
+  {{ content }}
+  </div></div>
+</body>
+{% include footer.html %}
 </html>

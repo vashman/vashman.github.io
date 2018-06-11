@@ -1,0 +1,12 @@
+---
+layout: default
+---
+<article>
+<h1>Log:<time>{{ page.date | date: "%b %d, %Y" }}</time></h1>
+{% if page.title %}<p>Subject: {{ page.title }}</p>
+{% endif %}
+
+{% if page.author %}<p>Author: {{ page.author }}</p>
+{% endif %}
+<div>{{ content }}</div>
+</article>
