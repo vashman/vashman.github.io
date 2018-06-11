@@ -30,14 +30,14 @@ collections:
 # Handling Reading
 safe:                true
 include:             [".data"]
-exclude:             ["domain", "Gemfile", "Gemfile.lock", "node_modules", "vendor/bundle/", "vendor/cache/", "vendor/gems/", "vendor/ruby/"]
+exclude:             ["domain", "_site"]
 keep_files:          [".git", ".data"]
 encoding:            "utf-8"
 markdown_ext:        "md"
 strict_front_matter: false
 
 # Filtering Content
-show_drafts: true
+show_drafts: false
 limit_posts: 0
 future:      true
 unpublished: false
