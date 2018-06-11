@@ -1,10 +1,10 @@
 # Where things are
 source:          .
 destination:     ./_site
-collections_dir: ./Ontology
+collections_dir: ./ontology
 #plugins_dir:     _plugins
 layouts_dir:     _layouts
-data_dir:        ./.Data/_data
+data_dir:        ./_data
 includes_dir:    _includes
 
 collections:
@@ -29,9 +29,9 @@ collections:
 
 # Handling Reading
 safe:                true
-include:             [".Data"]
-exclude:             ["Gemfile", "Gemfile.lock", "node_modules", "vendor/bundle/", "vendor/cache/", "vendor/gems/", "vendor/ruby/"]
-keep_files:          [".git", ".Data"]
+include:             [".data"]
+exclude:             ["domain", "Gemfile", "Gemfile.lock", "node_modules", "vendor/bundle/", "vendor/cache/", "vendor/gems/", "vendor/ruby/"]
+keep_files:          [".git", ".data"]
 encoding:            "utf-8"
 markdown_ext:        "md"
 strict_front_matter: false
@@ -86,8 +86,7 @@ defaults:
     values:
       layout: "default"
   - scope:
-      path: "Process"
+      path: "process"
     values:
       layout: "process"
-      author: "Sunny Sangha"
       catagory: "process"
