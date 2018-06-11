@@ -1,3 +1,6 @@
 ---
+version: 0.alpha
 ---
-# [Ontology](htttps://www.wikipedia.com/Ontology)
+Domain: Ontology
+=====================================================================
+- [Ontology](htttps://www.wikipedia.com/Ontology)
