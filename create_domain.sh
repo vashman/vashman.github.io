@@ -19,10 +19,9 @@ chmod "$dir_premissions" "./$domain_dir/$site_name"
 # Make Readme file
 touch "./$domain_dir/$site_name/readme.md"
 echo "---" >> "./$domain_dir/$site_name/readme.md"
-echo "version" >> "./$domain_dir/$site_name/readme.md"
-echo " : $version" >> "./$domain_dir/$site_name/readme.md"
+echo "version: $version" >> "./$domain_dir/$site_name/readme.md"
 echo "---" >> "./$domain_dir/$site_name/readme.md"
-echo "$site_name" >> "./$domain_dir/$site_name/readme.md"
+echo "Domain: $site_name" >> "./$domain_dir/$site_name/readme.md"
 echo "===========================================================================" >> "./$domain_dir/$site_name/readme.md"
 chmod 600 "./$domain_dir/$site_name/readme.md"
 
@@ -52,8 +51,7 @@ chmod 600 "./$domain_dir/$site_name/readme.md"
 
 # Add about information.
 echo "---" >> "./$domain_dir/$site_name/_data/about.yml"
-echo "name" >> "./$domain_dir/$site_name/_data/about.yml"
-echo " : $site_name" >> "./$domain_dir/$site_name/_data/about.yml"
+echo "name: $site_name" >> "./$domain_dir/$site_name/_data/about.yml"
 echo "---" >> "./$domain_dir/$site_name/_data/about.yml"
 chmod "$file_premissions" "./$domain_dir/$site_name/_data/about.yml"
 
