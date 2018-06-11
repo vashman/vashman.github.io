@@ -8,33 +8,39 @@ data_dir:        ./_data
 includes_dir:    _includes
 
 collections:
-  Service:
-    output: false
-  Process:
+  service:
     output: true
-  Module:
-    output: false
-  Product:
-    output: false
-  User:
-    output: false
-  Group:
-    output: false
-  Role:
-    output: false
-  Report:
-    output: false
-  Form:
-    output: false
+  process:
+    output: true
+  module:
+    output: true
+  product:
+    output: true
+  user:
+    output: true
+  group:
+    output: true
+  role:
+    output: true
+  report:
+    output: true
+  worksheet:
+    output: true
+  audio:
+    output: true
+  image:
+    output: true
+  documents:
+    output: true
 
 # Handling Reading
 safe:                true
 include:             [".data"]
-exclude:             ["domain", "_site"]
-keep_files:          [".git", ".data"]
+exclude:             ["domain", "_site", "*.sh"]
+keep_files:          [".git", ".data", ".config"]
 encoding:            "utf-8"
 markdown_ext:        "md"
-strict_front_matter: false
+strict_front_matter: true
 
 # Filtering Content
 show_drafts: false
