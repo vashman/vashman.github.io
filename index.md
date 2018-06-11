@@ -1,18 +1,10 @@
 ---
-layout: default
 title: Ontology
 ---
-<div>
-<h1>Log Entires</h1>
-
-<ul>{% for post in site.posts %}
-<li><span>{{ post.date | date: "%b %-d, %Y" }}</span>
-  <h2>
-  <a href="{{ post.url | prepend: site.baseurl }}">
-  {{ post.title }}
-  </a>
-  </h2>
-</li>
-{% endfor %}</ul>
+Log Entries
+=====================================================================
+{% for post in site.posts %}
+- {{ post.date | date: "%b %-d, %Y" }}
+  - [{{ post.title }}]("{{ post.url | prepend: site.baseurl }}")
+{% endfor %}
 <!--  <p>subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>-->
-</div>
