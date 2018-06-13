@@ -1,0 +1,6 @@
+name,copy,move
+unknown,,
+handle,false,true
+null,false,false
+binary,true,true
+memory,true,false
