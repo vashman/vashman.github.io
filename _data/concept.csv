@@ -21,3 +21,5 @@ data,false,false,false,null
 name,true,false,false,memory
 true,false,false,true,null
 false,false,false,true,null
+readme,false,false,false,null
+file,true,true,false,handle

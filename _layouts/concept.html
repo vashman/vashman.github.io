@@ -1,13 +1,16 @@
 ---
 layout: default
 ---
+<h1>Concept: {{ page.path | replace:'concept/','' | replace:'.md','' }}</h1>
 <section><div>
-- [{% if site.data.concept[page.title].readable == true %}X{% else %} {% endif %}] Readable
-- [] Writable
-- [] Unique
+{% for item in site.data.concept %}
+{% if item.name == page.concept %}
 
-Type
-  : item.type
-</div>
-{{ content }}
-</section>
+<input type="checkbox" onclick="return false;" {% if item.readable == true %}checked{% endif %}> Readable </input>
+<input type="checkbox" onclick="return false;" {% if item.writable == true %}checked{% endif %}> Writable </input>
+<input type="checkbox" onclick="return false;" {% if item.unique == true %}checked{% endif %}> Unique </input>
+
+<dl><dt>Type</dt><dd>{{ item.data }}</dd></dl>
+{% endif %}
+{% endfor %}
+</div>{{ content }}</section>

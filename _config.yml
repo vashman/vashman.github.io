@@ -32,6 +32,8 @@ collections:
     output: true
   documents:
     output: true
+  index:
+    output: false
 
 # Handling Reading
 safe:                true
@@ -95,4 +97,31 @@ defaults:
       path: "process"
     values:
       layout: "process"
-      catagory: "process"
+  - scope:
+      path: "concept"
+    values:
+      layout: "concept"
+  - scope:
+      path: "service"
+    values:
+      layout: "service"
+  - scope:
+      path: "user"
+    values:
+      layout: "user"
+  - scope:
+      path: "group"
+    values:
+      layout: "group"
+  - scope:
+      path: "role"
+    values:
+      layout: "role"
+  - scope:
+      path: "product"
+    values:
+      layout: "product"
+  - scope:
+      path: "module"
+    values:
+      layout: "module"
