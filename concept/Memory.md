@@ -1,23 +1,10 @@
 ---
+title: memory
 ---
-# Concept: Memory
-
-Properties
-  : Data
-  : Permissions
-  : Device
-  : Size
-
-Default device
-  : `ram`
-
-Dependency
-  :
-
-## Description
-Refers to computer memory stored upon any device.
-- Can refer to read-only and write-only memory as well.
-
+```code
+```
+Example
+---------------------------------------------------------------------------
 ```code
 [ name_A -> "string"
 , name_B -> "":99
@@ -29,3 +16,17 @@ Refers to computer memory stored upon any device.
 , name_H -> "":#:device:size
 ]
 ```
+
+Description
+===========================================================================
+Refers to computer memory stored upon any device.
+- Can refer to read-only and write-only memory as well.
+
+Properties
+  : Data
+  : Permissions
+  : Device
+  : Size
+
+Default device
+  : `ram`

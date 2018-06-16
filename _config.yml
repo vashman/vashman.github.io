@@ -38,7 +38,7 @@ collections:
 # Handling Reading
 safe:                true
 include:             [".data"]
-exclude:             ["domain", "_site", "*.sh"]
+exclude:             ["domain", "_site", "*.sh", "*.pst", "~*"]
 keep_files:          [".git", ".data", ".config"]
 encoding:            "utf-8"
 markdown_ext:        "md"

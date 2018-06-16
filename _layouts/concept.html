@@ -3,14 +3,14 @@ layout: default
 ---
 <h1>Concept: {{ page.path | replace:'concept/','' | replace:'.md','' }}</h1>
 <section><div>
-{% for item in site.data.concept %}
-{% if item.name == page.concept %}
 
-<input type="checkbox" onclick="return false;" {% if item.readable == true %}checked{% endif %}> Readable </input>
-<input type="checkbox" onclick="return false;" {% if item.writable == true %}checked{% endif %}> Writable </input>
-<input type="checkbox" onclick="return false;" {% if item.unique == true %}checked{% endif %}> Unique </input>
-
-<dl><dt>Type</dt><dd>{{ item.data }}</dd></dl>
-{% endif %}
+{% for item in site.data.title %}
+  {% if item.name == page.title %}
+  <input type="checkbox" onclick="return false;" {% if item.readable == true %}checked{% endif %}> Readable </input>
+  <input type="checkbox" onclick="return false;" {% if item.writable == true %}checked{% endif %}> Writable </input>
+  <input type="checkbox" onclick="return false;" {% if item.unique == true %}checked{% endif %}> Unique </input>
+  <dl><dt>Type</dt><dd>{{ item.data }}</dd></dl>
+  {% endif %}
 {% endfor %}
+
 </div>{{ content }}</section>
