@@ -28,6 +28,7 @@ declare -a template_dir=(
   "_posts"
   "_drafts"
   "_process"
+  "_procedure"
   "_report"
   "_product"
   "_module"

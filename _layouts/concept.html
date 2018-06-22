@@ -1,16 +1,19 @@
 ---
 layout: default
 ---
+<article><header>
 <h1>Concept: {{ page.path | replace:'concept/','' | replace:'.md','' }}</h1>
-<section><div>
+</header>
 
-{% for item in site.data.title %}
+<section>{% for item in site.data.concept %}
   {% if item.name == page.title %}
-  <input type="checkbox" onclick="return false;" {% if item.readable == true %}checked{% endif %}> Readable </input>
-  <input type="checkbox" onclick="return false;" {% if item.writable == true %}checked{% endif %}> Writable </input>
-  <input type="checkbox" onclick="return false;" {% if item.unique == true %}checked{% endif %}> Unique </input>
+  <input type="checkbox" onclick="return false;" {% if item.readable == "true" %}checked{% endif %}> Readable </input>
+  <input type="checkbox" onclick="return false;" {% if item.writable == "true" %}checked{% endif %}> Writable </input>
+  <input type="checkbox" onclick="return false;" {% if item.unique == "true" %}checked{% endif %}> Unique </input>
   <dl><dt>Type</dt><dd>{{ item.data }}</dd></dl>
   {% endif %}
-{% endfor %}
+{% endfor %}</section>
 
-</div>{{ content }}</section>
+</section>{{ content }}</section>
+<footer></footer>
+</article>

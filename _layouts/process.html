@@ -1,6 +1,45 @@
 ---
 layout: default
 ---
-</head>
-<h1>Process: {{ page.path | replace:'concept/','' | replace:'.md','' }}</h1>
-<section><div></div>{{ content }}</section>
+<article>
+<header>
+<h1>Process: {{ page.path | replace:'process/','' | replace:'.md','' }}</h1>
+</header>
+
+<section>
+<code>here be code<code>
+
+<h2>Ouput</h2>
+<ul>{% for asset in page.output %}
+<li>{{ asset }}</li>
+{% endfor %}</ul>
+
+<h2>Input</h2>
+<ul>{% for asset in page.input %}
+<li>{{ asset }}</li>
+{% endfor %}</ul>
+
+<h2>Polices</h2>
+<ul>{% for asset in page.policy %}
+<li>{{ asset }}</li>
+{% endfor %}</ul>
+
+<h2>People</h2>
+<ul>{% for asset in page.agent %}
+<li>{{ asset }}</li>
+{% endfor %}</ul>
+
+<h2>Example</h2>
+<ul>{% for asset in page.policy %}
+<li>{{ asset }}</li>
+{% endfor %}</ul>
+
+</section>
+
+<section>
+{{ content }}
+</section>
+
+<footer>
+</footer>
+</article>

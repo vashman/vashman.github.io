@@ -32,8 +32,8 @@ collections:
     output: true
   documents:
     output: true
-  index:
-    output: false
+  procedure:
+    output: true
 
 # Handling Reading
 safe:                true
@@ -89,10 +89,10 @@ sass:
   style: compressed
 
 defaults:
-  - scope:
-      path: "" # an empty string here means all files in project.
-    values:
-      layout: "default"
+#  - scope:
+#      path: "" # an empty string here means all files in project.
+#    values:
+#      layout: "default"
   - scope:
       path: "process"
     values:
