@@ -1,6 +1,17 @@
 ---
 layout: procedure
 title: readme
+
+asset:
+  - asset_name
+  - asset_name
+
+state:
+  - state name
+  - state name
+
+example:
+  - exmaple here
 ---
 _data section_
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
