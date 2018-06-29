@@ -1,0 +1,11 @@
+---
+layout: default
+---
+{% include todo.html %}
+{{ content }}
+{% include search.html %}
+<nav>
+  {% for x in site.collections %}
+  <a href="{{ x.url }}"></a><summary>{{ x.desc }}</summary>
+  {% endfor %}
+</nav>

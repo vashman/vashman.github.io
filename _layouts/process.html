@@ -1,7 +1,6 @@
 ---
-layout: default
+layout: post
 ---
-<article>
 <header>
 <h1>Process: {{ page.path | replace:'process/','' | replace:'.md','' }}</h1>
 </header>
@@ -36,10 +35,4 @@ layout: default
 
 </section>
 
-<section>
-{{ content }}
-</section>
-
-<footer>
-</footer>
-</article>
+<section>{{ content }}</section>

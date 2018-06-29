@@ -29,5 +29,5 @@ Condition Statement
   : skip too task _name_
 
 - [x] parent task
-  1. sub task
-  2. sub task
+   1. sub task
+   2. sub task

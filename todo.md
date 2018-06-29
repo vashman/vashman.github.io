@@ -1,0 +1,4 @@
+- [ ] Add css
+- [ ] Add bg image to header
+   - [ ] Add transition effect to image.
+- [ ] Add action menu
