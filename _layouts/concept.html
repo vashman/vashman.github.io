@@ -1,18 +1,15 @@
 ---
-layout: default
+layout: post
 ---
-<article><header>
-<h1>Concept: {{ page.path | replace:'concept/','' | replace:'.md','' }}</h1>
-</header>
-
-<section>{% for item in site.data.concept %}
+<header>
+{% for item in site.data.concept %}
   {% if item.name == page.title %}
   <input type="checkbox" onclick="return false;" {% if item.readable == "true" %}checked{% endif %}> Readable </input>
   <input type="checkbox" onclick="return false;" {% if item.writable == "true" %}checked{% endif %}> Writable </input>
   <input type="checkbox" onclick="return false;" {% if item.unique == "true" %}checked{% endif %}> Unique </input>
   <dl><dt>Type</dt><dd>{{ item.data }}</dd></dl>
   {% endif %}
-{% endfor %}</section>
+{% endfor %}
+</header>
 
-</section>{{ content }}<footer></footer></section>
-</article>
+<section>{{ content }}<footer></footer></section>

@@ -1,5 +1,5 @@
 ---
-layout: process
+layout: readme
 code: codefilename.code
 title: readme
 

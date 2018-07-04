@@ -1,4 +1,7 @@
-<nav>{% for domain in site.domains %}
-<a href="{{ domain.url }}">{{ domain.name }}</a>
-<summary>{{ domain.summary }}</summary>
+<h2>Domains</h2>
+<nav>{% for domain in site.data.domain %}
+<div>
+  <a href="{{ domain.url }}">{{ domain.name }}</a>
+  <p>{{ domain.summary }}</p>
+</div>
 {% endfor %}</nav>

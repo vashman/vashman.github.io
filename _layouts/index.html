@@ -1,13 +1,21 @@
 ---
 layout: default
 ---
-{% capture my_include %}{% include_relative todo.md %}{% endcapture %}
-{{ my_include | markdownify }}
+{% include todo.html %}
 {{ content }}
 {% include domain.html %}
 <nav>
+<a href="{{ site.url }}/concept">Concept
+</a>{% include search.html collection="concept" %}
+
+<a href="{{ site.url }}/template">Template
+</a>{% include search.html collection="template" %}
+</nav>
+<nav>
   {% for collection in site.collections %}
-  <a href="#">{{ collection.label }}</a>
+  <a href="{{ site.url }}/{{ collection.label }}">
+  {{ collection.label }}
+  </a>
   {% include search.html collection=collection %}
   {% endfor %}
 </nav>

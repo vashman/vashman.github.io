@@ -11,4 +11,4 @@ Log Entries
 <!--  <p>subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>-->
 
 url
-  : {{ site.url }}
+  : {root}/{{ site.url }}

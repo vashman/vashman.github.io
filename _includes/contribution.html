@@ -1,0 +1,6 @@
+<article>
+  {% capture my_include %}
+  {% include_relative contribution.md %}
+  {% endcapture %}
+{{ my_include | markdownify }}
+</article>

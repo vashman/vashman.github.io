@@ -1,12 +1,13 @@
 ---
 layout: default
 ---
+{% include note.html %}
 <article><section>
 {{ content }}
 <footer>
-File path: {{ page.path }}
-Author: {{ page.author }}
-Date: {{ page.date }}
-Time: {{ page.time }}
+<br>File path: {{ page.path }}
+<br>Author: {{ page.author }}
+<br>Date: {{ page.date }}
+<br>Time: {{ page.time }}
 </footer>
 </section></article>
