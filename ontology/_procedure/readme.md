@@ -65,12 +65,12 @@ Description
 ===========================================================================
 > A description of the procedure.
 
-Instructions
+_Agent__Name_
 ===========================================================================
-
-Phase: _title_
----------------------------------------------------------------------------
-> A description of the stage / phase.
+> The function that will perform / be involved in the below processes.
+> Functions do not appear for sub-process's; since they are always tied to
+> a parent process.
+> A description then follows of the stage / phase.
 
 Trigger
   : _trigger name_
@@ -78,14 +78,6 @@ Trigger
 
 Condition
   : if this, then do this, else skip.
-
-Agent
-  : _name_
-  : _group_
-
-> The function that will perform / be involved in the below processes.
-> Functions do not appear for sub-process's; since they are always tied to
-> a parent process.
 
 State
   : _state_
@@ -103,21 +95,17 @@ State
 2. _process name_
 3. _process name_
 
+_Agent__Name_
+===========================================================================
+
 Stage: _title_
 ---------------------------------------------------------------------------
 > A description of the stage / phase.
-
 
 1. _process name_
    - _process name_
    - _process name_
 2. _process name_
-
-Agent
-  : _name_
-  : _group_
-
 3. _process name_
-
 
 - _process name_

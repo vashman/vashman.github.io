@@ -3,5 +3,9 @@ layout: default
 ---
 <article>
 <section>{{ content }}</section>
-<section>{% include_relative form.md %}</section>
+<section>
+  {% include todo.html %}
+  {% include form.html %}
+  {% include note.html %}
+</section>
 <article>
