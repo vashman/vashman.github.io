@@ -1,0 +1,18 @@
+---
+layout: post
+codegen: concept
+---
+<header>
+<input type="checkbox" onclick="return false;"
+  {% if page.readable == true %}checked{% endif %}> Readable </input>
+<input type="checkbox" onclick="return false;"
+  {% if page.writable == true %}checked{% endif %}> Writable </input>
+<input type="checkbox" onclick="return false;"
+  {% if page.unique == true %}checked{% endif %}> Unique </input>
+<dl>
+  <dt>Type</dt>
+  <dd>{{ page.type }}</dd>
+</dl>
+</header>
+
+<section>{{ content }}<footer></footer></section>

@@ -1,0 +1,18 @@
+---
+layout: default
+---
+  {% if page.label %}
+  {% include code/{{ page.label }}.html %}
+  {% else %}
+  <div>No code generator specificed.</div>
+  {% endif %}
+{% include note.html %}
+<article><section>
+{{ content }}
+<footer>
+<br>File path: {{ page.path }}
+<br>Author: {{ page.author }}
+<br>Date: {{ page.date }}
+<br>Time: {{ page.time }}
+</footer>
+</section></article>

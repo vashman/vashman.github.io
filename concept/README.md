@@ -7,6 +7,9 @@ _Data section_
 
 Concept: _title_
 ===========================================================================
+```
+title:{} ->
+```
 - [x] Readable
 - [x] Writable
 - [x] Unique

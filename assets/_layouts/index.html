@@ -1,0 +1,24 @@
+---
+layout: default
+---
+{% include todo.html %}
+{{ content }}
+{% include domain.html %}
+<nav>
+<a href="{{ site.url }}/type">Type
+</a>{% include search.html collection="type" %}
+
+<a href="{{ site.url }}/concept">Concept
+</a>{% include search.html collection="concept" %}
+
+<a href="{{ site.url }}/template">Template
+</a>{% include search.html collection="template" %}
+</nav>
+<nav>
+  {% for collection in site.collections %}
+  <a href="{{ site.url }}/{{ collection.label }}">
+  {{ collection.label }}
+  </a>
+  {% include search.html collection=collection %}
+  {% endfor %}
+</nav>

@@ -1,8 +1,11 @@
 ---
 title: memory
+readable: true
+writable: true
+unique: false
+type: memory
 ---
-```code
-```
+
 Example
 ---------------------------------------------------------------------------
 ```code

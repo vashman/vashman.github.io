@@ -1,5 +1,10 @@
 ---
 title: file
+readable: true
+writable: true
+unique: false
+type: handle
+realtions: "(path)"
 ---
 Description
 ===========================================================================

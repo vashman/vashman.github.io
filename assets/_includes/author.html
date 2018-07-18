@@ -1,0 +1,8 @@
+<article>
+<header>
+<h1>Authors</h1>
+</header>
+<section>
+{% capture my_include %}{% include_relative AUTHORS.md %}{% endcapture %}
+{{ my_include | markdownify }}
+</section></article>

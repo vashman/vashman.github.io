@@ -1,39 +1,11 @@
 # Where things are
 source:          .
 destination:     _site
-collections_dir: ontology
+#collections_dir: ontology
 #plugins_dir:     _plugins
-layouts_dir:     _layouts
-data_dir:        _data
-includes_dir:    _includes
-
-collections:
-  service:
-    output: true
-  process:
-    output: true
-  module:
-    output: true
-  product:
-    output: true
-  user:
-    output: true
-  group:
-    output: true
-  role:
-    output: true
-  report:
-    output: true
-  worksheet:
-    output: true
-  audio:
-    output: true
-  image:
-    output: true
-  documents:
-    output: true
-  procedure:
-    output: true
+layouts_dir:     ./assets/_layouts
+data_dir:        ./assets/_data
+includes_dir:    ./assets/_includes
 
 # Handling Reading
 safe:                true
@@ -82,27 +54,65 @@ kramdown:
   input:         GFM
   hard_wrap:     false
   footnote_nr:   1
-  show_warnings: false
+  show_warnings: true
 
 sass:
-  sass_dir: _sass
+  sass_dir: ./assets/_sass
   style: compressed
+###########################################################################
+###                      Generated via gen.sh                           ###
+###########################################################################
+collections:
+  posts:
+    output: true
+  service:
+    output: true
+  process:
+    output: true
+  module:
+    output: true
+  product:
+    output: true
+  user:
+    output: true
+  group:
+    output: true
+  role:
+    output: true
+  report:
+    output: true
+  worksheet:
+    output: true
+  audio:
+    output: true
+  image:
+    output: true
+  documents:
+    output: true
+  procedure:
+    output: true
 
 defaults:
-#  - scope:
-#      path: "" # an empty string here means all files in project.
-#    values:
-#      layout: "default"
   - scope:
-      path: "process"
+      path: "" # an empty string here means all files in project.
+    values:
+      layout: "default"
+# Process
+  - scope:
+      path: ""
+      type: "process"
     values:
       layout: "process"
+      label: process
+# Concept
   - scope:
-      path: "concept"
+      path: "concept/"
     values:
       layout: "concept"
+# Service
   - scope:
       path: "service"
+      type: "service"
     values:
       layout: "service"
   - scope:

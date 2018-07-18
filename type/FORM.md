@@ -1,12 +1,8 @@
 ---
-layout: concept
+layout: type
 
-readable: true
-writable: true
-unique: true
-type: memory
-
-relation: "{A, B, C}:[1, {A, B}]"
+copy: true false
+move: true false
 ---
 
 Description

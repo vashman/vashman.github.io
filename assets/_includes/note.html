@@ -1,0 +1,4 @@
+<aside><section><header><h1>Notes</h1></header>
+{% capture my_include %}{% include_relative NOTE.md %}{% endcapture %}
+{{ my_include | markdownify }}
+</section></aside>

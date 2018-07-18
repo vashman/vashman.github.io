@@ -1,4 +1,4 @@
 ---
-title: License
+title: note
 layout: default
 ---
